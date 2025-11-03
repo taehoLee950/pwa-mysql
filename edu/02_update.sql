@@ -59,3 +59,32 @@ WHERE
 	`name` = '이태호'
 	AND birth = '1995-02-17'
 ;
+
+-- UPDATE 문
+UPDATE employees
+SET 
+	fire_at = NOW()
+	,deleted_at = NOW()
+WHERE
+	emp_id = 100005
+;
+
+SELECT *
+FROM employees
+WHERE
+	emp_id = 100005
+;
+
+UPDATE salaries
+SET 
+	salary = 500000000
+WHERE
+	sal_id = 1022176
+;
+
+SELECT *
+FROM salaries
+WHERE
+	emp_id = 100005
+;
+
